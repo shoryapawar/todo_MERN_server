@@ -5,7 +5,7 @@ export const connectDB= ()=>{
   .connect(process.env.MONGO_URI, {
     dbName: "LearnAPI",
   })
-  .then(() => console.log("DB connected !"))
+  .then((c) => console.log(`DB connected ! with host ${c.connection.host}` ))
   .catch((e) => console.log(e));
 
 }
