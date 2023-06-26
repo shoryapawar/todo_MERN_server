@@ -1,5 +1,6 @@
 import { User } from "../models/user.js";
 import bcrypt from "bcrypt";
+import ErrorHandler from "../middlewares/error.js";
 
 import { setCookie } from "../utils/features.js";
 export const getallUser = async (req, res) => {};
